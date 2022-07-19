@@ -8,11 +8,12 @@
     <title>Pastas Artesanales - Bon Giorno - </title>
     <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
+        <div id="logo">
             <a href="./index.html"><img src="./images/bongiorno_logo.svg" alt="Logo de Bon Giorno Pastas Artesanales"></a>
         </div>
         <div>
@@ -27,34 +28,43 @@
             </nav>
         </div>
     </header>
-        <main id="mainIndex" class="mainFlexbox">
-            <h1 class="cabecera__principal">BIENVENIDOS A BON GIORNO!</h1>
-            <div class="container bg-dark">
-                <div class="txtIndex">
-                    <h2 class="subt_slogan">Las Mejores Pastas Artesanales</h2>
-                </div>
-                <div class="image_main">
-                </div>               
-            </div>              
-            <div>
-                <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quibusdam sequi labore obcaecati at perferendis maxime libero esse, quos, nulla enim, beatae? Saepe distinctio voluptas repellendus quo maiores. Quae, necessitatibus.
-                Impedit, corporis. Veritatis quibusdam temporibus iste totam rem delectus recusandae atque dolorem officia tempore unde modi nobis nisi quasi voluptas quisquam distinctio consectetur accusantium, commodi laborum maiores molestiae minus eos!
-                In, quaerat veniam dolore commodi deleniti voluptatibus laudantium atque, sit impedit eos hic quasi unde eligendi. Explicabo magni obcaecati enim voluptatibus delectus consequuntur, vero repellendus voluptates hic dolores. Excepturi, odio.
-                </p>
+    <main id="mainIndex" class="mainFlexbox">
+        <h1 class="wow bounceInRight" data-wow-duration="2s" data-wow-iteration="3"id="cabecera__principal">BIENVENIDOS A BON GIORNO!</h1>
+        <div class="container bg-dark">
+            <div class="txtIndex">
+                <h2 class="wow rotateInUpLeft"id="subt_slogan">Las Mejores Pastas Artesanales</h2>
             </div>
-        </main>        
-        <footer class="pie" id="down">
-            <div class="redSocial">
-                <a href="https://facebook.com/" target="_blank"><img src="./images/facebook.png" alt=""></a>
-                <a href="https://instagram.com/" target="_blank"><img src="./images/instagram.png" alt=""></a>
-                <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png" alt=""></a>
-                <a href="https://goo.gl/maps/99fn79WTSV29cgwr8/" target="_blank"><img src="./images/maps.png" alt=""></a>
+            <div class="image_main">
             </div>
-        </footer>
-        <div class="whatsApp">
-            <a href="https://api.whatsapp.com/send?phone=543416769427" target="_blank"><img src="./images/whatsapp-logo.png" alt="Consultas por whatsapp"></a>
         </div>
+        <div>
+            <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quibusdam sequi labore obcaecati at perferendis maxime libero esse, quos, nulla enim, beatae? Saepe distinctio voluptas repellendus quo maiores. Quae, necessitatibus.
+            Impedit, corporis. Veritatis quibusdam temporibus iste totam rem delectus recusandae atque dolorem officia tempore unde modi nobis nisi quasi voluptas quisquam distinctio consectetur accusantium, commodi laborum maiores molestiae minus eos!
+            In, quaerat veniam dolore commodi deleniti voluptatibus laudantium atque, sit impedit eos hic quasi unde eligendi. Explicabo magni obcaecati enim voluptatibus delectus consequuntur, vero repellendus voluptates hic dolores. Excepturi, odio.
+            </p>
+        </div>
+        <div>
+            <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur iusto praesentium eos quod consectetur et explicabo soluta incidunt, minima voluptas excepturi eveniet, harum fugit reiciendis blanditiis error ex animi.
+            Tempore, consectetur voluptas cumque, id qui ipsam dolores ad ea, aperiam dolore perspiciatis commodi et modi ab amet incidunt a repellendus. Tenetur sit aliquam praesentium aut quidem beatae consectetur aspernatur!
+            </p>
+        </div>
+    </main>
+    <footer class="pie" id="down">
+        <div class="redSocial">
+            <a href="https://facebook.com/" target="_blank"><img src="./images/facebook.png" alt=""></a>
+            <a href="https://instagram.com/" target="_blank"><img src="./images/instagram.png" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png" alt=""></a>
+            <a href="https://goo.gl/maps/99fn79WTSV29cgwr8/" target="_blank"><img src="./images/maps.png" alt=""></a>
+        </div>
+    </footer>
+    <div class="whatsApp">
+        <a href="https://api.whatsapp.com/send?phone=543416769427" target="_blank"><img src="./images/whatsapp-logo.png" alt="Consultas por whatsapp"></a>
     </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>

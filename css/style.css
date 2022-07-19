@@ -38,8 +38,15 @@ h2 {
     text-align: center;
 }
 
-.logo {
+#logo {
     width: 20%;
+
+}
+
+#logo:hover{
+    transform: rotateZ(-360deg);
+    cursor: pointer;
+    transition: transform 2s;
 }
 
 div header {
@@ -101,7 +108,7 @@ main {
     padding: 10px;
 }
 
-.cabecera__principal {
+#cabecera__principal {
     color: #DA0C46;
     font-family: 'Cinzel', serif;
     font-weight: bold;
@@ -116,6 +123,8 @@ main {
     font-size: 3rem;
     padding: 20px 20px;
     text-align: center;
+    animation-name: textAlpha;
+    animation-duration: 3s;
 }
 
 .cabecera__contacto {
@@ -131,6 +140,8 @@ main {
     font-size: 2, 5rem;
     font-weight: bold;
     text-align: center;
+    animation-name: textAlpha;
+    animation-duration: 2s;
 }
 
 .text__horario {
@@ -147,7 +158,7 @@ main {
 }
 
 .cabecera__productos {
-    color: #0B0D0D;
+    color: #14E3E3;
     font-family: 'Cinzel', serif;
     font-weight: bold;
     font-size: 3rem;
@@ -240,6 +251,8 @@ main {
     width: 50vw;
     border-radius: 20px;
     margin: 10px 0 0 0;
+    animation-name: textAlpha;
+    animation-duration: 6s;
 }
 
 .nosotros_main {
@@ -248,9 +261,11 @@ main {
     justify-content: space-around;
     margin: auto;
     width: 70%;
+    animation-name: textAlpha;
+    animation-duration: 6s;
 }
 
-.subt_slogan {
+#subt_slogan {
     font-family: Roboto;
     font-weight: bold;
     margin: auto;
@@ -341,6 +356,9 @@ p {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
+    animation-name: textAlpha;
+    animation-duration: 5s;
+ 
 }
 
 #productos .galeria figure figcaption {
@@ -428,6 +446,37 @@ div footer div a img {
     text-align: center;
     z-index: 999;
 }
+/*Aplicando Animaciones*/
+@keyframes animateDiv{
+    0%{background-color: darkgrey; width: 220px;}
+    25%{background-color: deeppink; width: 320px;}
+    50%{background-color: darkorange; width: 420px;}
+    75%{background-color: yellow; width: 320px;}
+    100%{background-color: darkgreen; width: 220px;}
+
+}
+
+@keyframes textAlpha{
+    from{opacity: 0}
+    to{opacity: 1}
+    
+}
+
+.cabecera__promociones{
+    animation-name: animateDiv;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration:  5s;
+    animation-delay: 0;
+}
+
+
+.transition:hover{
+    
+}
+
+
+
 
 /* Aplicando Grid */
 #grid {
